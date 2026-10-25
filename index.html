@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>TaskFlow<span>.</span></h1>
+        <p>Organize your day. Achieve your goals.</p>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <div>
+                <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+                <h2>Let's get things done.</h2>
+                <p class="subtitle">Small steps lead to big achievements.</p>
+            </div>
+            <div class="date" id="currentDate"></div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Tasks</p>
+                <h3 id="totalTasks">0</h3>
+            </div>
+            <div class="stat-card">
+                <p>Completed</p>
+                <h3 id="completedTasks">0</h3>
+            </div>
+            <div class="stat-card">
+                <p>Pending</p>
+                <h3 id="pendingTasks">0</h3>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <div class="section-heading">
+                <div>
+                    <h2>My Tasks</h2>
+                    <p>Manage your daily activities</p>
+                </div>
+            </div>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What do you need to do?"
+                    maxlength="100"
+                    required
+                >
+
+                <select id="categoryInput" aria-label="Task category">
+                    <option value="Personal">Personal</option>
+                    <option value="Study">Study</option>
+                    <option value="Work">Work</option>
+                </select>
+
+                <button type="submit" id="submitButton">+ Add Task</button>
+            </form>
+
+            <div class="toolbar">
+                <input type="search" id="searchInput" placeholder="Search tasks...">
+
+                <select id="filterInput" aria-label="Filter tasks">
+                    <option value="all">All Tasks</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+
+            <div id="taskList" class="task-list"></div>
+
+            <p id="emptyMessage" class="empty-message">
+                No tasks yet. Add your first task above!
+            </p>
+        </section>
+
+        <section class="progress-section">
+            <div class="progress-heading">
+                <h3>Daily Progress</h3>
+                <span id="progressText">0%</span>
+            </div>
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <p>Keep going! Every completed task counts.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ♥ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
