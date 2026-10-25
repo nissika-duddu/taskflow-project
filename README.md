@@ -1,8 +1,7 @@
-
-# TaskFlow - Task Manager
+# TaskFlow – Student Task Manager
 
 ## Project Objective
-TaskFlow is a responsive task management website designed to help users organize their daily activities and track their progress.
+TaskFlow is a responsive task management website designed to help users organize daily activities, manage tasks, and track their progress.
 
 ## Technologies Used
 - HTML5
@@ -11,28 +10,25 @@ TaskFlow is a responsive task management website designed to help users organize
 - Git and GitHub
 - GitHub Pages
 
-## Features
-- Add new tasks
-- Edit existing tasks
-- Delete tasks
-- Mark tasks as completed
-- Search tasks by title or category
-- Filter completed and pending tasks
-- Dynamic task statistics
-- Daily progress bar
-- Responsive design for mobile, tablet and desktop
+## Main Features
+- Responsive website design
+- Add and manage tasks
+- Interactive buttons and task controls
+- JavaScript DOM manipulation and event handling
+- Organized and user-friendly interface
 
 ## Project Structure
-- index.html - Website structure
-- style.css - Website styling
-- script.js - Interactive functionality
-- README.md - Project documentation
+- `index.html` – Website structure
+- `style.css` – Styling and responsive layout
+- `script.js` – JavaScript functionality
+- `README.md` – Project documentation
 
-## How to Run
-Open index.html in a browser or use the Live Server extension in VS Code.
+## Links
+- GitHub Repository: https://github.com/nissika-duddu/taskflow-project
+- Live Website: https://nissika-duddu.github.io/taskflow-project/
 
-## Live Website
-Add your GitHub Pages link here after deployment.
+## Key Learnings
+This project helped me understand HTML, CSS, JavaScript, Git version control, GitHub repositories, and website deployment using GitHub Pages.
 
-## GitHub Repository
-Add your GitHub repository link here.
+## Future Improvements
+Future improvements may include task reminders, due dates, priority levels, and saving tasks between browser sessions.
